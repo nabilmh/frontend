@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="text-center">Agency List</h2>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let agency of agencies">
+                <td> {{ agency.agenceId }} </td>
+                <td> {{ agency.title }} </td>
+                <td> {{ agency.address }} </td>
+                
+                <td>
+                    <button  class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

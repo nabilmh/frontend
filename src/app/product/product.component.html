@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="text-center">Products List</h2>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>title</th>
+                <th>description</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td> {{ product.productId }} </td>
+                <td> {{ product.title }} </td>
+                <td> {{ product.description }} </td>
+                <td> {{ product.quantity }} </td>
+                <td>
+                    <button  class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
